@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Board</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,700;1,600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Overpass&family=Plus+Jakarta+Sans:ital,wght@0,700;1,600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');   
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+        .outerbox{
+                width:618px ;
+                height: 449px;
+                border:none;
+                border-radius: 25px;
+                box-shadow: 3px 6px 20px 4px #f2f5fe;
+                display: block ;
+                position: absolute;
+                margin-left: 394px;
+                margin-top: 131px;
+                
+                
+                
+                
+            }
+            .innerbox{
+                width: 306px;
+                height: 449px;
+                border: none;
+                border-radius: 25px;
+                background-image:  linear-gradient(to top, rgb(52 46 234),rgb(99 64 252));
+                display:flex;
+                position: absolute;
+                
+            }
+            .inneralpha{
+                font-size: 17px;
+                color: #c7c1e9;
+                font-family: Bahnschrift ;
+                margin-top: 40px;
+                margin-left: 108px ;
+                display: flex;
+                position: absolute;
+                
+                
+            }
+            .innerround{
+                
+                width: 160px;
+                height: 159px;
+                margin-top: 92px;
+                margin-left: 73px;
+                border: none;
+                border-radius: 105px;
+                background-image: linear-gradient(to top,rgb(71 53 243),rgb(75 35 202));
+                display: flex;
+                position: absolute;
+
+            }
+            .num{
+                font-family: 'Plus Jakarta Sans', sans-serif;
+                font-size: 55px;
+                display: flex;
+                position: absolute;
+                margin-top: 38px;
+                margin-left: 52px;
+                color: white;
+
+            }
+            .of100{
+                font-family: 'Overpass', sans-serif;
+                display: flex;
+                font-size: 14px;
+                position: absolute;
+                margin-top: 108px;
+                margin-left: 62px;
+                color: #8477ff;
+
+            }
+            .great{
+                font-family: 'Raleway', sans-serif;
+                display: flex;
+                font-size: 25px;
+                position:absolute;
+                margin-top: 291px;
+                margin-left: 120px;
+                color: white;
+                
+
+            }
+            .scoreresult{
+                font-family: 'Plus Jakarta Sans', sans-serif;
+                display: flex;
+                width: 204px;
+                font-size: 13px;
+                position:absolute;
+                margin-top: 343px;
+                margin-left:54px;
+                color: #bab8ff;
+                text-align: center;
+                line-height: 20px;
+                
+            }
+            .summary{
+                margin-left: 335px;
+                margin-top: 38px;
+                font-family: 'Lato', sans-serif;
+                font-weight: bold;
+                font-size: 18px;
+            }
+            
+            
+
+            .reaction{
+                background-color:#fff6f5;
+                border: none;
+                width: 250px;
+                height: 50px;
+                border-radius: 10px;
+                margin-left: 335px;
+                margin-top: 23px;
+                font-family: 'Lato', sans-serif;
+                font-weight: bold;
+                display: flex;
+                
+            }
+            .react_icon{
+                width:18px ;
+                height: 14px;
+                margin-top: 16px;
+                margin-left: 19px;
+                filter: invert(86%) sepia(66%) saturate(2167%) hue-rotate(295deg) brightness(89%) contrast(87%);
+            }
+            .reactionfont{
+                color:#db8787;
+                margin-left: 10px; 
+                font-size: 13px ;
+                margin-top: 15px;
+
+            }
+            .reactmark{
+                
+                margin-left: 86px;
+                font-size: 12px ;
+                margin-top: 15px;
+                color: black;
+                font-family: 'Jost', sans-serif;
+            }
+            .Memory{
+                background-color:#fffbf2;
+                border: none;
+                width: 250px;
+                height: 50px;
+                border-radius: 10px;
+                margin-left: 335px;
+                margin-top: 14px;
+                font-family: 'Lato', sans-serif;
+                font-weight: bold;
+                display: flex;
+            }
+            .memory_icon{
+                width:15px ;
+                height: 14px;
+                margin-top: 16px;
+                margin-left: 20px;
+                filter: invert(83%) sepia(36%) saturate(384%) hue-rotate(1deg) brightness(86%) contrast(89%);
+            }
+            .memoryfont{
+                color:#cfb97d;
+                margin-left: 12px; 
+                font-size: 13px ;
+                margin-top: 15px;
+                
+
+            }
+            .memorymark{
+                
+                margin-left: 88px;
+                font-size: 12px ;
+                margin-top: 15px;
+                color: black;
+                font-family: 'Jost', sans-serif;
+            }
+            .Verbal{
+                background-color:#f2fafa;
+                border: none;
+                width: 250px;
+                height: 50px;
+                border-radius: 10px;
+                margin-left: 335px;
+                margin-top: 14px;
+                font-family: 'Lato', sans-serif;
+                font-weight: bold;
+                display: flex;
+            }
+            .verbal_icon{
+                width:15px ;
+                height: 14px;
+                margin-top: 16px;
+                margin-left: 22px;
+                filter: invert(55%) sepia(96%) saturate(383%) hue-rotate(119deg) brightness(97%) contrast(91%); 
+
+            }
+            .verbalfont{
+                color:#14c9a8;
+                margin-left: 12px; 
+                font-size: 13px ;
+                margin-top: 15px;
+            }
+            .verbalmark{
+                margin-left: 99px;
+                font-size: 12px ;
+                margin-top: 15px;
+                color: black;
+                font-family: 'Jost', sans-serif;
+            }
+            .Visual{
+                background-color:#f3f3fd;
+                border: none;
+                width: 250px;
+                height: 50px;
+                border-radius: 10px;
+                margin-left: 335px;
+                margin-top: 14px;
+                font-family: 'Lato', sans-serif;
+                font-weight: bold;
+                display: flex;
+            }
+            .visual_icon{
+                width:15px ;
+                height: 14px;
+                margin-top: 16px;
+                margin-left: 22px;
+                filter: invert(30%) sepia(18%) saturate(1207%) hue-rotate(198deg) brightness(96%) contrast(99%);
+
+            }
+            .visualfont{
+                color:#46497f;
+                margin-left: 12px; 
+                font-size: 13px ;
+                margin-top: 15px;
+            }
+            .visualmark{
+                margin-left: 101px;
+                font-size: 12px ;
+                margin-top: 15px;
+                color: black;
+                font-family: 'Jost', sans-serif;
+            }
+            .continuebtn{
+                background-color:#303b59;
+                color: white;
+                border: none;
+                width: 250px;
+                height: 50px;
+                border-radius: 30px;
+                margin-left: 335px;
+                margin-top: 14px;
+                font-family: 'Lato', sans-serif;
+                font-weight: bold;
+                
+                cursor: pointer;
+                
+            }
+            
+            .continuefont{
+                margin-left: -3px;
+                margin-top: 14px;
+            }
+            .continuebtn:hover{
+                background-image:linear-gradient(to top, rgb(52 46 234),rgb(99 64 252));
+                transition: 0.7s;
+            }
+            
+    </style>
+</head>
+<body>
+
+ <div >
+    <div class="outerbox">
+        
+        <div class="innerbox">
+            
+                <p class="inneralpha">Your Result</p>
+
+                        <div class="innerround">
+
+                             <div>
+                                 <p class="num">76</p>
+                                 <p class="of100"> of 100</p>
+                              </div>
+
+                         </div>
+                         <p class="great">Great</p>
+                         <p class="scoreresult">You scored higher than 65% of the people who have taken these tests.</p>
+                         
+        </div>
+        <p class="summary">Summary</p>
+        <div class="reaction">
+            <img class="react_icon" src="icons/thunder.png">
+            <p class="reactionfont">Reaction</p>
+            <p class="reactmark"> 80 <span style="color: #a19da1;margin-left: 2px;">/ 100</span> </p>
+        </div>
+        <div class="Memory">
+            <img class="memory_icon" src="icons/brain.png">
+            <p class="memoryfont">Memory</p>
+            <p class="memorymark"> 92 <span style="color: #a19da1;margin-left: 2px;">/ 100</span> </p>
+        </div>
+        <div class="Verbal">
+            <img class="verbal_icon" src="icons/chat-bubble.png">
+            <p class="verbalfont">Verbal</p>
+            <p class="verbalmark"> 61 <span style="color: #a19da1;margin-left: 2px;">/ 100</span> </p>
+        </div>
+        <div class="Visual">
+            <img class="visual_icon" src="icons/view.png">
+            <p class="visualfont">Visual</p>
+            <p class="visualmark"> 72 <span style="color: #a19da1;margin-left: 2px;">/ 100</span> </p>
+        </div>
+        <button class="continuebtn" type="button"><span class="continuefont">Continue</span></button>
+    </div>
+</div>
+
+</body>
+</html>
